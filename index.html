@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #forma {
+            position: relative;
+        }
+
+        .loader {
+            position: absolute;
+            left: 0;
+            right: 0;
+            display: none;
+        }
+    </style>
+
+    <body>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                        <form id="forma" style="margin-top: 40px;">
+                            <div class="loader"></div>
+                            <div class="form-group">
+                                <label for="password">Enter Password</label>
+                                <input type="password" class="form-control" id="password" aria-describedby="emailHelp"
+                                    placeholder="Enter password">
+                            </div>
+                            <div class="form-group">
+                                <label for="password_one">Repeat Password</label>
+                                <input type="password" class="form-control" id="password_one"
+                                    placeholder="Repeat Password">
+                            </div>
+                            <div id="error" class="alert alert-danger" role="alert">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+        <script src="main.js"></script>
+        <!-- <script>
+                function keisti() {
+                    var oldpassword = document.getElementById('oldPassword').value;
+                    var newpassword = document.getElementById('newPassword').value;
+                    var confirmpassword = document.getElementById('confirmPassword').value;
+                    if (oldPassword == '' || newpassword == '' || confirmpassword == '') {
+                        alert('Uzpildykite visus laukus');
+                    }
+                    else if (oldpassword === newpassword) {
+                        alert("Naujas slaptazodis negali sutapti su senu");
+                    }
+                    else if (newpassword !== confirmpassword) {
+                        alert('Slaptažodžiai nesutampa - pakartokite dar kartą');
+                    }
+                    else {
+                        // document.getElementById("loader").style.display = "block";
+                        // onload = "myFunction()"
+                        alert("Slaptažodis keičiamas");
+                    }
+                }</script> -->
+
+    </body>
+</html>
